@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 public class ExperienceService {
     
     @Autowired
-    InterExperienceRepository IExpRepo;
+    private InterExperienceRepository IExpRepo;
     
     public List<Experience> list(){
         return IExpRepo.findAll();

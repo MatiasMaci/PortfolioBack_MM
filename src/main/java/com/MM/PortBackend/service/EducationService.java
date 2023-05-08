@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 public class EducationService {
     
     @Autowired
-    InterEducationRepository IEduRepo;
+    private InterEducationRepository IEduRepo;
     
     public List<Education> list(){
         return IEduRepo.findAll();

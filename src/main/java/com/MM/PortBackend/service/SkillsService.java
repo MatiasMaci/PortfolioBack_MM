@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 public class SkillsService {
     
     @Autowired
-    InterSkillsRepository ISkillRepo;
+    private InterSkillsRepository ISkillRepo;
     
     public List<Skills> list(){
         return ISkillRepo.findAll();
