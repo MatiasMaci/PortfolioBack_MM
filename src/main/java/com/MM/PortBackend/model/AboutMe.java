@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,10 +17,22 @@ public class AboutMe {
     
     //@Size(min=1,max=50,message="No cumple con la longitud")
     private String informacion;
+    
+    @Size(min=1,max=50,message="No cumple con la longitud")
     private String ciudad;
+    
+    @Size(min=1,max=50,message="No cumple con la longitud")
     private String provincia;
+    
     private int edad;
 
     public AboutMe() {
+    }
+
+    public AboutMe(String informacion, String ciudad, String provincia, int edad) {
+        this.informacion = informacion;
+        this.ciudad = ciudad;
+        this.provincia = provincia;
+        this.edad = edad;
     }
 }
