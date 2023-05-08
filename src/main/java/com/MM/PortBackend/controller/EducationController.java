@@ -47,8 +47,27 @@ public class EducationController {
             return new ResponseEntity(new Mensaje("Esa educacion ya existe"),
                                                   HttpStatus.BAD_REQUEST);
         }
+        if(StringUtils.isBlank(dtoEdu.getInfoCurso())){
+            return new ResponseEntity(new Mensaje("La informacion es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoEdu.getFechaInicio())){
+            return new ResponseEntity(new Mensaje("La fecha de inicio es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoEdu.getFechaFin())){
+            return new ResponseEntity(new Mensaje("La fecha de fin es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoEdu.getImagen())){
+            return new ResponseEntity(new Mensaje("La URL es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
         Education Edu = new Education(dtoEdu.getNombreCurso(),
-                                        dtoEdu.getInfoCurso());
+                                        dtoEdu.getInfoCurso(), 
+                                        dtoEdu.getFechaInicio(),
+                                        dtoEdu.getFechaFin(), 
+                                        dtoEdu.getImagen());
         EduServ.save(Edu);
         
         return new ResponseEntity(new Mensaje("Educacion agregada"),
@@ -71,9 +90,28 @@ public class EducationController {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"),
                                                   HttpStatus.BAD_REQUEST);
         }
+        if(StringUtils.isBlank(dtoEdu.getInfoCurso())){
+            return new ResponseEntity(new Mensaje("La informacion es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoEdu.getFechaInicio())){
+            return new ResponseEntity(new Mensaje("La fecha de inicio es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoEdu.getFechaFin())){
+            return new ResponseEntity(new Mensaje("La fecha de fin es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoEdu.getImagen())){
+            return new ResponseEntity(new Mensaje("La URL es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
         Education Edu = EduServ.getOne(id).get();
         Edu.setNombreCurso(dtoEdu.getNombreCurso());
         Edu.setInfoCurso(dtoEdu.getInfoCurso());
+        Edu.setFechaInicio(dtoEdu.getFechaInicio());
+        Edu.setFechaFin(dtoEdu.getFechaFin());
+        Edu.setImagen(dtoEdu.getImagen());
         
         EduServ.save(Edu);
         return new ResponseEntity(new Mensaje("Educacion actualizada"),

@@ -47,8 +47,29 @@ public class ExperienceController {
             return new ResponseEntity(new Mensaje("Esa experiencia existe"),
                                                   HttpStatus.BAD_REQUEST);
         }
+        if(StringUtils.isBlank(dtoExp.getInfoPuesto())){
+            return new ResponseEntity(new Mensaje("La informacion es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoExp.getFechaInicio())){
+            return new ResponseEntity(new Mensaje("La fecha de inicio es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoExp.getFechaFin())){
+            return new ResponseEntity(new Mensaje("La fecha de fin es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoExp.getImagen())){
+            return new ResponseEntity(new Mensaje("La URL es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        
+        
         Experience Exp = new Experience(dtoExp.getNombreEmpresa(),
-                                        dtoExp.getInfoPuesto());
+                                        dtoExp.getInfoPuesto(), 
+                                        dtoExp.getFechaInicio(),
+                                        dtoExp.getFechaFin(), 
+                                        dtoExp.getImagen());
         ExpServ.save(Exp);
         
         return new ResponseEntity(new Mensaje("Experiencia agregada"),
@@ -71,9 +92,29 @@ public class ExperienceController {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"),
                                                   HttpStatus.BAD_REQUEST);
         }
+        if(StringUtils.isBlank(dtoExp.getInfoPuesto())){
+            return new ResponseEntity(new Mensaje("La informacion es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoExp.getFechaInicio())){
+            return new ResponseEntity(new Mensaje("La fecha de inicio es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoExp.getFechaFin())){
+            return new ResponseEntity(new Mensaje("La fecha de fin es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        if(StringUtils.isBlank(dtoExp.getImagen())){
+            return new ResponseEntity(new Mensaje("La URL es obligatoria"),
+                                                  HttpStatus.BAD_REQUEST);
+        }
+        
         Experience Exp = ExpServ.getOne(id).get();
         Exp.setNombreEmpresa(dtoExp.getNombreEmpresa());
         Exp.setInfoPuesto(dtoExp.getInfoPuesto());
+        Exp.setFechaInicio(dtoExp.getFechaInicio());
+        Exp.setFechaFin(dtoExp.getFechaFin());
+        Exp.setImagen(dtoExp.getImagen());
         
         ExpServ.save(Exp);
         return new ResponseEntity(new Mensaje("Experiencia actualizada"),
