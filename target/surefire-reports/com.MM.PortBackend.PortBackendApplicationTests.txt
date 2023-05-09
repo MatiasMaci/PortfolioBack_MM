@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.MM.PortBackend.PortBackendApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 115.902 s - in com.MM.PortBackend.PortBackendApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 74.516 s - in com.MM.PortBackend.PortBackendApplicationTests
