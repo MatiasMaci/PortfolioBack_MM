@@ -32,8 +32,11 @@ C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\s
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\controller\SkillsController.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\model\Achievements.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\security\service\UserDetailsImpl.java
+C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\model\Banner.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\controller\ExperienceController.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\controller\ProjectController.java
+C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\controller\BannerController.java
+C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\service\BannerService.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\model\Persona.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\security\controller\Mensaje.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\dto\DtoExperience.java
@@ -44,6 +47,7 @@ C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\s
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\security\dto\LoginUsuario.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\security\entity\UsuarioPrincipal.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\model\Projects.java
+C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\repository\InterBannerRepository.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\dto\DtoPersona.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\PortBackendApplication.java
 C:\Users\pelum\Desktop\Portfolio - Macijaukas\Portfolio_Backend_MM\PortBackend\src\main\java\com\MM\PortBackend\security\service\RolService.java

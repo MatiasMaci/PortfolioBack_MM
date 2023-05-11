@@ -1,4 +1,5 @@
 com\MM\PortBackend\controller\AchievementsController.class
+com\MM\PortBackend\repository\InterBannerRepository.class
 com\MM\PortBackend\controller\PersonaController.class
 com\MM\PortBackend\repository\InterAchievementsRepository.class
 com\MM\PortBackend\security\entity\Usuario.class
@@ -14,6 +15,7 @@ com\MM\PortBackend\service\ProjectService.class
 com\MM\PortBackend\model\Experience.class
 com\MM\PortBackend\security\MainSecurity.class
 com\MM\PortBackend\security\entity\Rol.class
+com\MM\PortBackend\service\BannerService.class
 com\MM\PortBackend\security\repository\InterRolRepository.class
 com\MM\PortBackend\security\controller\Mensaje.class
 com\MM\PortBackend\security\repository\InterUsuarioRepository.class
@@ -36,6 +38,7 @@ com\MM\PortBackend\security\dto\NuevoUsuario.class
 com\MM\PortBackend\service\ExperienceService.class
 com\MM\PortBackend\security\service\UserDetailsImpl.class
 com\MM\PortBackend\dto\DtoProject.class
+com\MM\PortBackend\controller\BannerController.class
 com\MM\PortBackend\service\PersonaService.class
 com\MM\PortBackend\service\AchievementsService.class
 com\MM\PortBackend\PortBackendApplication.class
@@ -43,6 +46,7 @@ com\MM\PortBackend\WebConfig.class
 com\MM\PortBackend\model\Skills.class
 com\MM\PortBackend\security\service\RolService.class
 com\MM\PortBackend\model\Achievements.class
+com\MM\PortBackend\model\Banner.class
 com\MM\PortBackend\security\service\UsuarioService.class
 com\MM\PortBackend\security\dto\JwtDto.class
 com\MM\PortBackend\repository\InterAboutRepository.class
